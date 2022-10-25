@@ -1,8 +1,6 @@
 <div class="container w-25 mt-5">
-    <TodoList />
-    <Todos>
-        {{#each @model as |todo|}}
-        <TodoItem @text={{todo.todo}}/>
-        {{/each}}
-    </Todos>
+    <TodoInput />
+    {{#each @model as |todo|}}
+        <TodoItem @done={{todo.done}} @text={{todo.todo}} @todoId={{todo.id}} />
+    {{/each}}
 </div>

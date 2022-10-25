@@ -1,0 +1,8 @@
+<form action="">
+    <div class="d-flex gap-2">
+        <Input type="text" class="form-control" @value={{this.todoInput}} placeholder="Ecris ton todo..." />
+        <div class="input-group-append" id="button-addon4">
+            <button class="btn btn-outline-secondary" type="button" {{on "click" this.addTodo}} >Ajouter</button>
+        </div>
+    </div>
+</form>
